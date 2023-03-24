@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="main-page">
+    <div>
+      <ul id="navbar">
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="">Cities</a>
+        </li>
+        <li>
+          <a href="">News</a>
+        </li>
+      </ul>
+    </div>
+    <div id="details">
+      <h3 id="d1">Weather Details</h3>
+      <div id="d2">
+        <ul id="detail-left">
+          <p>Cloudy</p>
+          <p>Humidity</p>
+          <p>Wind</p>
+        </ul>
+        <ul id="detail-right">
+          <p id="cloudy">10%</p>
+          <p id="humidity">62%</p>
+          <p id="wind">8Km/h</p>
+        </ul>
+      </div>
+    </div>
+    <div id="temp">
+      <p id="temperature">23</p>
+      <div id="t1">
+        <p id="city">Mumbai</p>
+        <div id="t12">
+          <ul>
+            <li id="time">08:45</li>
+            <li id="day">monday</li>
+            <li id="date">09/03/99</li>
+          </ul>
+        </div>
+
+      </div>
+      <span id="weather_logo" class="material-symbols-outlined">sunny</span>
+    </div>
+  </div>
+  <section id="cities">
+    <h1 style="font-size: 48px;">Cities</h1>
+    <ul>
+      <li>
+        <h2 id="city1" class="cities">
+          <p>Thunder</p>
+        </h2>
+        <div class="city-name">
+          <p id="city1-temp" class="temp">18</p>
+          <div class="city12">
+            <h2 id="city1-name">Jaipur</h2>
+            <p class="date" id="city1-date">12/45/66</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <h2 id="city2" class="cities">
+          <p>Cloudy</p>
+        </h2>
+        <div class="city-name">
+          <p id="city2-temp" class="temp">19</p>
+          <div class="city12">
+            <h2 id="city2-name">Mumbai</h2>
+            <p class="date" id="city2-date">12/45/66</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <h2 id="city3" class="cities">
+          <p>Sunny</p>
+        </h2>
+        <div class="city-name">
+          <p id="city3-temp" class="temp">28</p>
+          <div class="city12">
+            <h2 id="city3-name">Chennai</h2>
+            <p id="city3-date">12/45/66</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Search City" name="search">
+      <button type="submit"><span class="material-symbols-outlined">search</span></button>
+    </div>
+
+  </section>
+  <section id="planet">
+  </section>
+  <section id="news">
+    <h1 style="font-size: 48px;">News</h1>
+    <ul>
+      <li>
+        <h2 id="news1" class="news-li">
+          <p>Thunder Strikes Delhi</p>
+        </h2>
+      </li>
+      <li>
+        <h2 id="news2" class="news-li">
+          <p>Cloud Storm in Mainpur</p>
+        </h2>
+      </li>
+      <li>
+        <h2 id="news3" class="news-li">
+          <p>It's Summer Season in Mumbai</p>
+        </h2>
+      </li>
+    </ul>
+  </section>
+  <section id="footer">
+    <span>WEATHER APP</span>
+    <div id="foot">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Cities</a>
+        </li>
+        <li>
+          <a href="#">News</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">Contact us</a>
+        </li>
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <script src="jquery-3.6.0.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

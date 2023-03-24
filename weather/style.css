@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+}
+
+/* Main Page */
+#main-page {
+  background-image: url("assets/background.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  margin-top: 48px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  color: white;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: white;
+  font-weight: bolder;
+}
+
+/* Weather Details */
+#details {
+  width: 30%;
+  height: 40%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 100%);
+  opacity: 0.8;
+  backdrop-filter: blur(20px);
+  margin-top: 160px;
+  display: flex;
+  position: absolute;
+  right: 85px;
+  flex-direction: column;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#d1 {
+  margin: 30px 50px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#d2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+#d2 ul p {
+  margin-top: 23px;
+  font-size: 20px;
+}
+
+/* Temperature */
+#temp {
+  color: white;
+  top: 75%;
+  position: absolute;
+  left: 10%;
+  display: flex;
+  margin-right: 0;
+}
+
+#temperature {
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#t1 {
+  margin: 25px 30px;
+  font-weight: bold;
+}
+
+#city {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#t12 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#t12 ul li {
+  list-style: none;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+#weather_logo {
+  margin-top: 35px;
+}
+
+@media (max-width: 800px) {
+  #details {
+    width: 100%;
+    right: 0;
+  }
+  #temperature{
+    font-size: 5rem;
+  }
+  #temp {
+    left: 10px;
+  }
+}
+
+/* CITIES */
+#cities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 0;
+  background-color: white;
+}
+
+#cities ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 150px;
+  width: 60%;
+}
+
+#cities ul li {
+  border-radius: 20px;
+  background-color: white;
+  margin: 0 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: width 2s, height 4s;
+}
+
+#city1 {
+  background-image: url("assets/thunder.jpg");
+  background-size: cover;
+}
+
+.cities {
+  height: 290px;
+  width: 270px;
+  color: white;
+  position: relative;
+  bottom: 5px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#city1 p {
+  position: absolute;
+  bottom: 14px;
+  left: 25px;
+}
+
+.city12 {
+  padding-top: 13px;
+}
+
+.temp {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.city-name {
+  display: flex;
+  justify-content: space-around;
+}
+
+.city-name h2 {
+  font-weight: bold;
+}
+
+
+#city2 {
+  background-image: url("assets/cloudy.jpg");
+}
+
+#city2 p {
+  position: absolute;
+  bottom: 14px;
+  left: 25px;
+}
+
+#city3 {
+  background-image: url("assets/sunny.jpg");
+}
+
+#city3 p {
+  position: absolute;
+  bottom: 14px;
+  left: 25px;
+}
+
+@media (max-width: 1200px) {
+  #cities ul {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cities ul li {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  #cities ul {
+    width: 100%;
+  }
+}
+
+/* SEARCH BAR */
+.search-bar {
+  padding-top: 100px;
+  width: 70%;
+}
+
+.search-bar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 92%;
+  padding-right: 0;
+}
+
+@media (max-width: 960px) {
+  .search-bar input[type=text] {
+    width: 70%;
+  }
+}
+
+.search-bar button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  padding-left: 0;
+  border-radius: 5px;
+}
+
+.search-bar button:hover {
+  background: #ccc;
+}
+
+/* PLANET */
+#planet {
+  background-image: url("assets/earth.png");
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+}
+
+#planet:hover {
+  transform: scale(2.5);
+}
+
+/* NEWS */
+#news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 0;
+  background-color: white;
+}
+
+#news ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 60px 20px;
+  width: 80%
+}
+
+#news ul li p {
+  left: 10px;
+  position: relative;
+  top: 269px;
+  font-size: 26px;
+  width: 90%;
+}
+
+#news1 {
+  background-image: url("assets/thunder.jpg");
+}
+
+#news2 {
+  background-image: url("assets/cloudy.jpg");
+}
+
+#news3 {
+  background-image: url("assets/sunny.jpg");
+}
+
+.news-li {
+  height: 390px;
+  width: 270px;
+  border-radius: 20px;
+  color: white;
+  background-size: cover;
+}
+
+@media (max-width: 1200px) {
+  #news ul {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #news ul li {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  #news ul {
+    width: 100%;
+  }
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer span {
+  position: relative;
+  top: 76px;
+  left: 9%;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 50%;
+}
+
+#foot {
+  display: flex;
+  margin-top: 50px;
+  right: 75px;
+  position: relative;
+  justify-content: space-around;
+  width: 20%;
+}
+
+#footer div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer div ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 960px) {
+  #footer {
+    flex-direction: column;
+  }
+
+  #foot {
+    width: 100%;
+    justify-content: space-evenly;
+    bottom: 35px;
+    right: 34px;
+  }
+}
+
+section {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+section.active {
+  transform: translateY(0);
+  opacity: 1;
+}
