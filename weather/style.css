@@ -132,7 +132,7 @@ body {
     font-size: 5rem;
   }
   #temp {
-    left: 10px;
+    left: 0;
   }
 }
 
@@ -398,6 +398,7 @@ body {
 @media (max-width: 960px) {
   #footer {
     flex-direction: column;
+    height: 35vh;
   }
 
   #foot {

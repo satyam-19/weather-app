@@ -2,7 +2,7 @@
 var d = new Date();
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 let request_mumbai = new XMLHttpRequest();
-request_mumbai.open("GET","http://api.weatherapi.com/v1/current.json?key=d91515a77be54a1b84d70638232403&q=mumbai");
+request_mumbai.open("GET","https://api.weatherapi.com/v1/current.json?key=d91515a77be54a1b84d70638232403&q=mumbai");
 request_mumbai.send();
 request_mumbai.onload = () => {
   if(request_mumbai.status === 200){
@@ -26,7 +26,7 @@ let cities = ["","Jaipur","Mumbai","Chennai"]
 
 for (let i = 1; i < 4; i++) {
   let request = new XMLHttpRequest();
-  let city = "http://api.weatherapi.com/v1/current.json?key=d91515a77be54a1b84d70638232403&q=" + cities[i];
+  let city = "https://api.weatherapi.com/v1/current.json?key=d91515a77be54a1b84d70638232403&q=" + cities[i];
   request.open("GET",city);
   request.send();
   request.onload = () => {
